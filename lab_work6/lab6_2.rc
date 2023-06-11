@@ -1,0 +1,29 @@
+#define IDM_Prog 10001
+#define IDI_ICON 1001
+#define IDR_MENU1 10000
+#define IDM_Cursor 10004
+#define IDM_Paint 10002
+#define IDM_About 10005
+#define IDM_Author 10001
+#define IDM_Exit 10003
+
+#include "C:/masm64/include64/Resource.h"
+
+IDI_ICON ICON DISCARDABLE "1.ico"
+10 ICON DISCARDABLE "1.ico"
+
+IDR_MENU1 MENU
+BEGIN
+  POPUP "Завдання"
+  BEGIN
+    MENUITEM "Змістити курсор",IDM_Cursor
+    MENUITEM "Малювати кардиоду",IDM_Paint
+  END
+  POPUP "Інформація"
+  BEGIN
+    MENUITEM "Завдання",IDM_About
+    MENUITEM "Автор",IDM_Author
+  END
+  MENUITEM "Вихід",IDM_Exit
+END
+
